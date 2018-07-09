@@ -2,7 +2,7 @@
     background-color: $color-grey-dark-3;
     padding: 10rem 0;
     font-size: 1.4rem;
-    color: $colo-grey-light-1;
+    color: $color-grey-light-1;
 
     @include respond(tab-port) {
         padding: 8rem 0;
@@ -37,9 +37,9 @@
         list-style: none;
     }
 
-    &__items {
+    &__item {
         display: inline-block;
-        
+
         &:not(:last-child) {
             margin-right: 1.5rem;
         }
@@ -48,7 +48,7 @@
     &__link {
         &:link,
         &:visited {
-            color: $colo-grey-light-1;
+            color: $color-grey-light-1;
             background-color: $color-grey-dark-3;
             text-decoration: none;
             text-transform: uppercase;
@@ -60,6 +60,7 @@
         &:active {
             color: $color-primary;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: rotate(5deg) scale(1.3);
         }
     }
 
